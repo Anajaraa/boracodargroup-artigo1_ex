@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility in Web Development - BoraCodar Group</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <header>
+        <h1>Accessibility in Web Development - BoraCodar Group</h1>
+        <img src="deficiente.png" alt="Logo">
+        <nav>
+            <a href="#section1" class="btn btn-white">People with Disabilities</a>
+            <a href="#section2" class="btn btn-white">Best Practices</a>
+            <a href="#section3" class="btn btn-white">Bootcamp Info</a>
+            <a href="#form" class="btn btn-white">Survey</a>
+        </nav>
+    </header>
+    
+    <section id="section1">
+        <h2>People with Disabilities</h2>
+        <p>
+            O termo "People with Disabilities" (Pessoas com Deficiência) é amplamente utilizado em inglês para se referir a indivíduos que possuem algum tipo de deficiência, seja ela física, sensorial, mental ou intelectual. Este termo enfatiza a pessoa antes da deficiência, promovendo a visão de que a deficiência é apenas uma parte da identidade do indivíduo e não a define completamente. Esta abordagem respeitosa e inclusiva é fundamental para a criação de ambientes acessíveis e acolhedores.
+        </p>
+    </section>
+    
+    <section id="section2">
+        <h2>Best Practices in Web Development</h2>
+        <p>
+            A implementação de boas práticas de acessibilidade no desenvolvimento da web é essencial para garantir que todos os usuários, independentemente de suas habilidades, possam acessar e interagir com o conteúdo digital. As diretrizes WCAG (Web Content Accessibility Guidelines) fornecem um framework sólido para criar experiências web acessíveis. Entre as melhores práticas destacam-se: o uso de HTML semântico, navegação por teclado, descrição de imagens e conteúdos multimídia, e testes regulares de acessibilidade com ferramentas automatizadas e manuais.
+        </p>
+    </section>
+    
+    <section id="section3">
+        <h2>Bootcamp de Tecnologia</h2>
+        <p>
+            A SoulCode Academy, em parceria com a Sankhya, oferece um bootcamp de tecnologia focado em JAVA Fullstack. Este programa visa capacitar profissionais para desenvolverem soluções robustas e acessíveis, com ênfase em boas práticas de programação e inclusão digital. Participar deste bootcamp é uma excelente oportunidade para adquirir habilidades valiosas e contribuir para um mundo digital mais inclusivo.
+        </p>
+    </section>
+    
+    <section id="form">
+        <form>
+            <h2>Survey on "Person with a Disability" and Web Accessibility Practices</h2>
+            
+            <div class="form-group">
+                <label for="q1">1. Qual é a sua opinião sobre o termo "person with a disability" (pessoa com deficiência)?</label>
+                <select id="q1" name="q1">
+                    <option value="very_positive">Muito positivo</option>
+                    <option value="positive">Positivo</option>
+                    <option value="neutral">Neutro</option>
+                    <option value="negative">Negativo</option>
+                    <option value="very_negative">Muito negativo</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="q2">2. Você possui alguma deficiência?</label>
+                <select id="q2" name="q2">
+                    <option value="yes">Sim</option>
+                    <option value="no">Não</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="q3">3. Você trabalha na área de tecnologia?</label>
+                <select id="q3" name="q3">
+                    <option value="yes">Sim</option>
+                    <option value="no">Não</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="q4">4. Você está familiarizado(a) com as diretrizes WCAG (Web Content Accessibility Guidelines)?</label>
+                <select id="q4" name="q4">
+                    <option value="well_familiar">Sim, estou bem familiarizado(a)</option>
+                    <option value="somewhat_familiar">Já ouvi falar, mas não conheço bem</option>
+                    <option value="not_familiar">Não, nunca ouvi falar</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="q5">5. Você está familiarizado(a) com a especificação ARIA (Accessible Rich Internet Applications)?</label>
+                <select id="q5" name="q5">
+                    <option value="well_familiar">
+                        option value="well_familiar">Sim, estou bem familiarizado(a)</option>
+                <option value="somewhat_familiar">Já ouvi falar, mas não conheço bem</option>
+                <option value="not_familiar">Não, nunca ouvi falar</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="q6">6. Você conhece alguma tecnologia assistiva? Se sim, qual(is)?</label>
+            <input type="text" id="q6" name="q6">
+        </div>
+
+        <div class="form-group">
+            <label for="q7">7. Você já implementou alguma prática de acessibilidade em seus projetos de desenvolvimento web?</label>
+            <select id="q7" name="q7">
+                <option value="yes">Sim</option>
+                <option value="no">Não</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="q8">8. Quão importante você considera a acessibilidade na web?</label>
+            <select id="q8" name="q8">
+                <option value="very_important">Muito importante</option>
+                <option value="important">Importante</option>
+                <option value="neutral">Neutro</option>
+                <option value="not_important">Pouco importante</option>
+                <option value="not_important_at_all">Nada importante</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="q9">9. Você gostaria de aprender mais sobre acessibilidade na web?</label>
+            <select id="q9" name="q9">
+                <option value="yes">Sim</option>
+                <option value="no">Não</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="q10">10. Você possui alguma sugestão ou comentário sobre como melhorar a inclusão de pessoas com deficiência no desenvolvimento web?</label>
+            <textarea id="q10" name="q10" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Enviar Respostas</button>
+        </div>
+    </form>
+</section>
+    
+    
+    
+    
+    
+    
+    
+<footer>
+    <p>&copy; 2024 Accessibility in Web Development. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

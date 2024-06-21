@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Trad:wght@100..400&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #2e4347;
+    background-color: #e4ebf0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #c0d1c2;
+}
+
+header h1 {
+    font-family: 'Playwrite FR Trad', cursive;
+    font-size: 3rem;
+    margin: 0;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    font-size: 1.2rem;
+    color: #2e4347;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #c0d1c2;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+form {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"], 
+form input[type="email"], 
+form textarea, 
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="radio"], 
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form button {
+    background-color: #2e4347;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #c0d1c2;
+}
